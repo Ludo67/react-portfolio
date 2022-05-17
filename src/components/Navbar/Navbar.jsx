@@ -13,11 +13,12 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <img src={images.logo} alt="logo"/>
+        <h1 style={{marginLeft: 20}} className='h-text'>Ludovic's Portfolio</h1>
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills','contact'].map((item) => (
+        {['home', 'about', 'skills', 'work','contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
-            <div/>
+            {/* <div/> */}
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
